@@ -1,0 +1,123 @@
+/* Unique Sedona Experiences — design system
+   Palette drawn from Sedona itself: sandstone, rust, deep canyon shadow, sage. */
+:root{
+  --sand:#FAF5EE;
+  --sand-2:#F3E9DC;
+  --rust:#A44A24;
+  --rust-dark:#7C2D12;
+  --ink:#2B211C;
+  --ink-soft:#5C4A3F;
+  --sage:#6B7F5E;
+  --line:#E3D5C3;
+  --card:#FFFFFF;
+  --radius:14px;
+  --shadow:0 10px 30px rgba(124,45,18,.10);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--sand);color:var(--ink);
+  font-family:-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  font-size:17px;line-height:1.6;
+}
+h1,h2,h3{font-family:Georgia,"Times New Roman",serif;line-height:1.2;color:var(--ink);margin:0 0 .5em}
+h1{font-size:2.6rem}
+h2{font-size:1.9rem}
+h3{font-size:1.2rem}
+p{margin:0 0 1em}
+a{color:var(--rust)}
+img{max-width:100%;display:block}
+.wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+
+/* Top bar + header */
+.topbar{background:var(--rust-dark);color:#F7E8DA;font-size:.9rem}
+.topbar .wrap{display:flex;justify-content:space-between;gap:16px;padding-top:7px;padding-bottom:7px;flex-wrap:wrap}
+.topbar a{color:#FFD9BE;font-weight:600;text-decoration:none}
+header.site{background:var(--sand);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:20}
+header.site .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;padding-top:14px;padding-bottom:14px}
+.logo{font-family:Georgia,serif;font-size:1.45rem;font-weight:700;color:var(--ink);text-decoration:none;line-height:1.1}
+.logo span{color:var(--rust)}
+.logo small{display:block;font-family:inherit;font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-soft);font-weight:400}
+nav.main{display:flex;gap:22px;flex-wrap:wrap}
+nav.main a{color:var(--ink);text-decoration:none;font-weight:600;font-size:.98rem}
+nav.main a:hover{color:var(--rust)}
+.btn{display:inline-block;background:var(--rust);color:#fff;text-decoration:none;font-weight:700;
+  padding:12px 22px;border-radius:999px;border:0;cursor:pointer;font-size:1rem}
+.btn:hover{background:var(--rust-dark)}
+.btn.ghost{background:transparent;color:var(--rust);border:2px solid var(--rust)}
+.btn.ghost:hover{background:var(--rust);color:#fff}
+
+/* Hero */
+.hero{position:relative;color:#fff}
+.hero img{width:100%;height:520px;object-fit:cover}
+.hero .shade{position:absolute;inset:0;background:linear-gradient(90deg,rgba(43,25,16,.72) 0%,rgba(43,25,16,.35) 55%,rgba(43,25,16,.05) 100%)}
+.hero .wrap{position:absolute;inset:0;left:0;right:0;display:flex;flex-direction:column;justify-content:center}
+.hero h1{color:#fff;max-width:640px;font-size:3rem}
+.hero p{max-width:560px;font-size:1.15rem;color:#F7E8DA}
+.hero .cta-row{display:flex;gap:14px;flex-wrap:wrap;margin-top:10px}
+
+/* Trust strip */
+.trust{background:var(--sand-2);border-bottom:1px solid var(--line)}
+.trust .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;padding-top:18px;padding-bottom:18px}
+.trust div{font-size:.95rem;color:var(--ink-soft)}
+.trust strong{display:block;color:var(--ink);font-size:1rem}
+
+/* Sections + cards */
+section{padding:56px 0}
+section.tight{padding:36px 0}
+.kicker{letter-spacing:.16em;text-transform:uppercase;font-size:.78rem;font-weight:700;color:var(--rust);margin-bottom:8px}
+.grid{display:grid;gap:22px}
+.grid.cats{grid-template-columns:repeat(3,1fr)}
+.grid.tours{grid-template-columns:repeat(4,1fr)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column}
+.card img{height:170px;width:100%;object-fit:cover}
+.card .body{padding:18px;display:flex;flex-direction:column;gap:6px;flex:1}
+.card h3{margin:0}
+.card .meta{font-size:.9rem;color:var(--ink-soft)}
+.card .price{margin-top:auto;font-weight:700}
+.card .price b{color:var(--rust);font-size:1.15rem}
+.card .book{margin-top:10px;text-align:center}
+.cat-card{position:relative;border-radius:var(--radius);overflow:hidden;min-height:210px;display:flex;align-items:flex-end;text-decoration:none}
+.cat-card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.cat-card .label{position:relative;background:linear-gradient(transparent,rgba(43,25,16,.85));color:#fff;width:100%;padding:38px 18px 14px;font-family:Georgia,serif;font-size:1.25rem}
+.stars{color:#D98E32;letter-spacing:1px;font-size:.92rem}
+.badge{display:inline-block;background:var(--sage);color:#fff;font-size:.72rem;font-weight:700;letter-spacing:.06em;
+  text-transform:uppercase;padding:3px 9px;border-radius:999px}
+
+/* Gift card band */
+.band{background:var(--rust-dark);color:#FBEFE4;border-radius:var(--radius);padding:36px;display:grid;grid-template-columns:1.4fr .6fr;gap:24px;align-items:center}
+.band h2{color:#fff}
+.band .btn{background:#fff;color:var(--rust-dark)}
+.band .btn:hover{background:var(--sand-2)}
+
+/* Tour page */
+.tour-hero{display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:start}
+.facts{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:22px;position:sticky;top:90px}
+.facts dl{display:grid;grid-template-columns:auto 1fr;gap:6px 14px;margin:0 0 16px}
+.facts dt{font-weight:700}
+.facts dd{margin:0;color:var(--ink-soft)}
+.facts .btn{width:100%;text-align:center}
+ul.checks{list-style:none;padding:0;margin:0 0 1em}
+ul.checks li{padding-left:26px;position:relative;margin-bottom:8px}
+ul.checks li::before{content:"✓";position:absolute;left:0;color:var(--sage);font-weight:700}
+
+/* Footer */
+footer{background:var(--ink);color:#D8C9BA;margin-top:20px}
+footer .wrap{padding-top:36px;padding-bottom:36px}
+footer a{color:#F0B48A}
+footer .fine{font-size:.82rem;color:#A68F7C;margin-top:18px;line-height:1.5}
+
+@media (max-width:960px){
+  .grid.cats{grid-template-columns:repeat(2,1fr)}
+  .grid.tours{grid-template-columns:repeat(2,1fr)}
+  .trust .wrap{grid-template-columns:repeat(2,1fr)}
+  .tour-hero{grid-template-columns:1fr}
+  .facts{position:static}
+  .band{grid-template-columns:1fr}
+  .hero h1{font-size:2.2rem}
+  .hero img{height:440px}
+}
+@media (max-width:560px){
+  .grid.cats,.grid.tours{grid-template-columns:1fr}
+  nav.main{gap:14px}
+}
