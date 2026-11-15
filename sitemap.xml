@@ -7,7 +7,6 @@
   <url><loc>https://www.booksedonatours.com/vortex-tours.html</loc><priority>0.9</priority></url>
   <url><loc>https://www.booksedonatours.com/wine-tours.html</loc><priority>0.8</priority></url>
   <url><loc>https://www.booksedonatours.com/night-tours.html</loc><priority>0.8</priority></url>
-  <url><loc>https://www.booksedonatours.com/gift-cards.html</loc><priority>0.8</priority></url>
   <url><loc>https://www.booksedonatours.com/tours/broken-arrow-jeep-tour.html</loc><priority>0.7</priority></url>
   <url><loc>https://www.booksedonatours.com/tours/antelope-canyon-horseshoe-bend-tour.html</loc><priority>0.7</priority></url>
   <url><loc>https://www.booksedonatours.com/tours/sedona-vortex-odyssey.html</loc><priority>0.7</priority></url>
@@ -51,4 +50,5 @@
   <url><loc>https://www.booksedonatours.com/tours/ancient-ruins-jeep-tour.html</loc><priority>0.7</priority></url>
   <url><loc>https://www.booksedonatours.com/blog.html</loc><priority>0.8</priority></url>
   <url><loc>https://www.booksedonatours.com/blog/amitabha-stupa-sedona.html</loc><priority>0.7</priority></url>
+  <url><loc>https://www.booksedonatours.com/photo-credits.html</loc><priority>0.3</priority></url>
 </urlset>
